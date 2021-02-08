@@ -7,7 +7,7 @@ export default ({}, inject) => {
   const preset = options.preset || 'default'
   delete options.preset
   const plugins = options.use || []
-  delete options.use
+  // delete options.use
   options = serialize(options)
   options = options === '{}' ? undefined : options
 %>
