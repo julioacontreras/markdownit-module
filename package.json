@@ -1,6 +1,6 @@
 {
   "name": "@julioacontreras/markdownit",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "homepage": "https://github.com/julioacontreras/markdownit-module",
   "license": "MIT",
   "main": "dist/module.js",
@@ -9,12 +9,6 @@
     "dist"
   ],
   "scripts": {
-    "build": "siroc build && mkdist --src src/runtime --dist dist/runtime",
-    "dev": "nuxt test/fixture",
-    "format": "yarn lint --fix",
-    "lint": "eslint --ext .js,.ts,.vue .",
-    "release": "yarn test && yarn build && standard-version && git push --follow-tags && npm publish",
-    "test": "yarn lint && jest"
   },
   "dependencies": {
     "@nuxtjs/markdownit-loader": "^1.1.1",
